@@ -1,6 +1,6 @@
 {
   "name": "generator-jekyll-webapp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Will automatically scafold a jekyll project that uses Bower, CSSNano, UglifyJS, HTMLMin, ImageOptim and Gulp for rapid development of static webapps.",
   "homepage": "https://bitbucket.org/owenmelbz/jekyll-webapp-generator",
   "author": {
