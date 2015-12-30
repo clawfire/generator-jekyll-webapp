@@ -1,0 +1,25 @@
+<footer>
+    <cite>
+        Copyright &copy; Owen Melbourne
+    </cite>
+</footer>
+
+<!-- build:js /assets/js/vendor.js -->
+<!-- bower:js -->
+<script src="/scripts/analytics.js"></script>
+<script src="/scripts/webfontloader.js"></script>
+<script src="/bower_components/modernizr/dist/modernizr-build.js"></script>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/loadcss/loadCSS.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<script>loadCSS('/assets/css/site.css');</script>
+<noscript><link href="/assets/css/site.css" rel="stylesheet"></noscript>
+
+<!-- build:js /assets/js/site.js -->
+<script src="/scripts/main.js"></script>
+<!-- endbuild -->
+
+<script>WebFont.load({ google: { families: ['Lato:300', 'Montserrat:400,700']} })</script>
+<script>ga('create', '{{site.google-analytics}}', 'auto'); ga('send', 'pageview');</script>

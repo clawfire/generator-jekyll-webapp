@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+        {% include meta.html %}
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- build:css /assets/css/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <link rel="stylesheet" href="/assets/css/critical.css" inline>
+
+    </head>
+
+    <body>
+        {% include header.html %}
+        {% include sidebar.html %}
+        {% include footer.html %}
+    </body>
+</html>

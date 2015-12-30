@@ -11,12 +11,17 @@
   "files": [
     "generators"
   ],
-  "main": "generators/index.js",
+  "main": "generators/app/index.js",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "gulp",
+    "bower",
+    "jekyll",
+    "wiredep",
+    "browser-sync"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.21.1",
+    "yeoman-generator": "^0.22.2",
     "chalk": "^1.0.0",
     "yosay": "^1.0.2"
   },
@@ -25,13 +30,14 @@
     "gulp": "^3.6.0",
     "gulp-eslint": "^1.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.9.0",
+    "gulp-istanbul": "^0.10.3",
     "gulp-mocha": "^2.0.0",
     "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
-    "gulp-coveralls": "^0.1.0"
+    "gulp-coveralls": "^0.1.0",
+    "underscore.string": "^3.2.2"
   },
-  "repository": "/generator-jekyll-webapp",
+  "repository": "https://github.com/OwenMelbz/generator-jekyll-webapp",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

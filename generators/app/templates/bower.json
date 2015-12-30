@@ -1,0 +1,21 @@
+{
+  "name": "<%= slug %>",
+  "description": "<%= description %>",
+  "main": "gulpfile.js",
+  "authors": [
+    "<%= author %>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "loadcss": "~0.2.4",
+    "modernizr": "~3.2.0"
+  }
+}

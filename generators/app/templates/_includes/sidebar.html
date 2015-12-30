@@ -1,0 +1,43 @@
+<div id="sidebar" {% if page.class %} class="opened loaded" {% endif %}>
+
+    <i class="close">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 32 32"><path fill="#ffffff" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13zM21 8l-5 5-5-5-3 3 5 5-5 5 3 3 5-5 5 5 3-3-5-5 5-5z"/></svg>
+    </i>
+
+    <nav id="featured-work" role="secondary">
+
+        {% for post in site.posts %}
+        <a href="{{post.url}}" title="{{post.title}}">
+
+            <div class="preview">
+                <img src="{{post.preview}}" alt="{{post.title}}">
+            </div>
+
+            <div class="intro">
+                <h2 class="{{post.class}}-mod">{{post.title}}</h2>
+                <p class="{{post.class}}-mod">{{post.description}}</p>
+            </div>
+        </a>
+        {% endfor %}
+
+    </nav>
+
+    <article id="active-work">
+
+        <i class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" viewBox="0 0 32 32"><path fill="#ffffff" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13zM21 8l-5 5-5-5-3 3 5 5-5 5 3 3 5-5 5 5 3-3-5-5 5-5z"/></svg>
+        </i>
+
+        <i class="back hvr-wobble-horizontal">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20 11v2h-12.2l5.6 5.6-1.4 1.4-8-8 8-8 1.4 1.4-5.6 5.6h12.2z"/></svg> <span>back</span>
+        </i>
+
+        <div class="loader"><div class="loader-inner ball-triangle-path"><div></div><div></div><div></div></div></div>
+        <div class="post-container">
+            <div class="wrapper {{page.class}}">
+                {{content}}
+            </div>
+        </div>
+    </article>
+
+</div>
