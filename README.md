@@ -1,4 +1,4 @@
-# generator-jekyll-webapp [![NPM version][npm-image]][npm-url] [![Build Status]
+# generator-jekyll-webapp [![NPM version][npm-image]][npm-url]
 > Will automatically scafold a jekyll project that uses Bower, CSSNano, UglifyJS, HTMLMin, ImageOptim and Gulp for rapid development of static webapps.
 
 ## Installation
