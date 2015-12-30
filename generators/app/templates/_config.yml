@@ -1,11 +1,38 @@
+#
+# This file contains configuration flags to customize your site
+#
+
 title: <%= name %>
 description: <%= description %>
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
 baseurl: <%= baseurl %>
+url: <%= baseurl %>
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google-analytics: <%= ga %>
 
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
 markdown: <%= md %>
+highlighter: pygments
+permalink: /:title/
+
+# The release of Jekyll Now that you're using
+version: v3.0.1
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jemoji
 
 exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
     - .tmp
     - dev
     - dist
