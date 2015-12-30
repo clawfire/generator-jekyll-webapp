@@ -109,6 +109,7 @@ module.exports = yeoman.generators.Base.extend({
     this.spawnCommandSync('grunt');
     process.chdir('../../');
     this.spawnCommandSync('git', ['init']);
+    this.spawnCommandSync('gulp', ['google-things'])
     this.spawnCommandSync('gulp', ['serve']);
   }
 });
