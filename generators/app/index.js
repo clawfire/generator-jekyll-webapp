@@ -86,10 +86,10 @@ module.exports = yeoman.generators.Base.extend({
     this.bulkDirectory('scripts', 'scripts');
 
     //copy generic files
-    this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));
-    this.fs.copy(this.templatePath('editorconfig'), this.destinationPath('editorconfig'));
-    this.fs.copy(this.templatePath('gulpfile.babel.js'), this.destinationPath('gulpfile.babel.js'));
-    this.fs.copy(this.templatePath('index.html'), this.destinationPath('index.html'));
+    if(this.fs.exists(this.templatePath('.gitignore'))){this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));}
+    if(this.fs.exists(this.templatePath('editorconfig'))){this.fs.copy(this.templatePath('editorconfig'), this.destinationPath('editorconfig'));}
+    if(this.fs.exists(this.templatePath('gulpfile.babel.js'))){this.fs.copy(this.templatePath('gulpfile.babel.js'), this.destinationPath('gulpfile.babel.js'));}
+    if(this.fs.exists(this.templatePath('index.html'))){this.fs.copy(this.templatePath('index.html'), this.destinationPath('index.html'));}
 
     //copy files with customisations
     this.fs.copyTpl(this.templatePath('_config.yml'), this.destinationPath('_config.yml'), this.props);
